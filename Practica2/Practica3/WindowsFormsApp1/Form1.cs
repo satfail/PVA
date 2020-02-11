@@ -71,5 +71,69 @@ namespace WindowsFormsApp1
         {
             tvwArbol.Nodes.Clear();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInsertarLista_Click(object sender, EventArgs e)
+        {
+            ListViewItem milista;
+            milista = lvwLista.Items.Add(txtDni.Text);
+            milista.SubItems.Add(txtNombre.Text);
+            milista.SubItems.Add(txtTelefono.Text);
+        }
+
+        private void lvwLista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBorrarLista_Click(object sender, EventArgs e)
+        {
+            int count = lvwLista.SelectedItems.Count;
+            if (count != 0)
+            {
+                for (int i = 0; i < lvwLista.Items.Count; i++)
+                {
+                    if (lvwLista.Items[i].Selected)
+                    {
+                        lvwLista.Items[i].Remove();
+                        i--;
+                    }
+                }
+            }
+        }
+
+        private void btnBorrarTodoLista_Click(object sender, EventArgs e)
+        {
+            lvwLista.Items.Clear();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
