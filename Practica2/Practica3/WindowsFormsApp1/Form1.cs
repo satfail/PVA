@@ -90,7 +90,12 @@ namespace WindowsFormsApp1
         private void btnInsertarLista_Click(object sender, EventArgs e)
         {
             ListViewItem milista;
-            milista = lvwLista.Items.Add(txtDni.Text);
+            //Hay que añadir imagen
+
+            if(rbImagen1.Checked)
+                milista = lvwLista.Items.Add(txtDni.Text,0);
+            else
+                milista = lvwLista.Items.Add(txtDni.Text,1);
             milista.SubItems.Add(txtNombre.Text);
             milista.SubItems.Add(txtTelefono.Text);
         }
@@ -105,14 +110,24 @@ namespace WindowsFormsApp1
             int count = lvwLista.SelectedItems.Count;
             if (count != 0)
             {
-                for (int i = 0; i < lvwLista.Items.Count; i++)
+                //Hacer un foreach para evitar que se salga
+                //Cada vez que elimina actualiza la lista
+               foreach(ListViewItem elemento in lvwLista.Items)
+                {
+                    if (elemento.Selected)
+                    {
+                        lvwLista.Items.Remove(elemento);
+                    }
+                }
+
+               /* for (int i = 0; i < lvwLista.Items.Count; i++)
                 {
                     if (lvwLista.Items[i].Selected)
                     {
                         lvwLista.Items[i].Remove();
                         i--;
                     }
-                }
+                }*/
             }
         }
 

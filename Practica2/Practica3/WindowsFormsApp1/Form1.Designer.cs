@@ -42,24 +42,24 @@
             this.txtInsertar = new System.Windows.Forms.TextBox();
             this.tvwArbol = new System.Windows.Forms.TreeView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.lvwLista = new System.Windows.Forms.ListView();
-            this.lblDni = new System.Windows.Forms.Label();
-            this.lblTelefono = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.txtDni = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnInsertarLista = new System.Windows.Forms.Button();
-            this.btnBorrarLista = new System.Windows.Forms.Button();
             this.btnBorrarTodoLista = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.btnBorrarLista = new System.Windows.Forms.Button();
+            this.btnInsertarLista = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbImagen2 = new System.Windows.Forms.RadioButton();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.rbImagen1 = new System.Windows.Forms.RadioButton();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDni = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblDni = new System.Windows.Forms.Label();
+            this.lvwLista = new System.Windows.Forms.ListView();
             this.colDni = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTelefono = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnSalir = new System.Windows.Forms.Button();
             this.tabPrincipal.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gpBox.SuspendLayout();
@@ -206,15 +206,131 @@
             this.tabPage2.Text = "Lista";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // btnSalir
+            // btnBorrarTodoLista
             // 
-            this.btnSalir.Location = new System.Drawing.Point(239, 528);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 7;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.btnBorrarTodoLista.Location = new System.Drawing.Point(178, 427);
+            this.btnBorrarTodoLista.Name = "btnBorrarTodoLista";
+            this.btnBorrarTodoLista.Size = new System.Drawing.Size(120, 23);
+            this.btnBorrarTodoLista.TabIndex = 10;
+            this.btnBorrarTodoLista.Text = "Borrar toda la lista";
+            this.btnBorrarTodoLista.UseVisualStyleBackColor = true;
+            this.btnBorrarTodoLista.Click += new System.EventHandler(this.btnBorrarTodoLista_Click);
+            // 
+            // btnBorrarLista
+            // 
+            this.btnBorrarLista.Location = new System.Drawing.Point(28, 427);
+            this.btnBorrarLista.Name = "btnBorrarLista";
+            this.btnBorrarLista.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrarLista.TabIndex = 9;
+            this.btnBorrarLista.Text = "Borrar";
+            this.btnBorrarLista.UseVisualStyleBackColor = true;
+            this.btnBorrarLista.Click += new System.EventHandler(this.btnBorrarLista_Click);
+            // 
+            // btnInsertarLista
+            // 
+            this.btnInsertarLista.Location = new System.Drawing.Point(223, 358);
+            this.btnInsertarLista.Name = "btnInsertarLista";
+            this.btnInsertarLista.Size = new System.Drawing.Size(75, 23);
+            this.btnInsertarLista.TabIndex = 8;
+            this.btnInsertarLista.Text = "Insertar";
+            this.btnInsertarLista.UseVisualStyleBackColor = true;
+            this.btnInsertarLista.Click += new System.EventHandler(this.btnInsertarLista_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbImagen2);
+            this.groupBox1.Controls.Add(this.rbImagen1);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox1.Location = new System.Drawing.Point(223, 273);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(75, 79);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Icono";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // rbImagen2
+            // 
+            this.rbImagen2.ImageIndex = 1;
+            this.rbImagen2.ImageList = this.imageList1;
+            this.rbImagen2.Location = new System.Drawing.Point(7, 56);
+            this.rbImagen2.Name = "rbImagen2";
+            this.rbImagen2.Size = new System.Drawing.Size(50, 20);
+            this.rbImagen2.TabIndex = 1;
+            this.rbImagen2.TabStop = true;
+            this.rbImagen2.UseVisualStyleBackColor = true;
+            this.rbImagen2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Whack-Windows-Live-Messenger-icon.png");
+            this.imageList1.Images.SetKeyName(1, "Office-Girl-icon.png");
+            this.imageList1.Images.SetKeyName(2, "windows-7-user-icon.png");
+            // 
+            // rbImagen1
+            // 
+            this.rbImagen1.ImageIndex = 0;
+            this.rbImagen1.ImageList = this.imageList1;
+            this.rbImagen1.Location = new System.Drawing.Point(7, 21);
+            this.rbImagen1.Name = "rbImagen1";
+            this.rbImagen1.Size = new System.Drawing.Size(50, 18);
+            this.rbImagen1.TabIndex = 0;
+            this.rbImagen1.TabStop = true;
+            this.rbImagen1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.rbImagen1.UseVisualStyleBackColor = true;
+            this.rbImagen1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(84, 372);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefono.TabIndex = 6;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(84, 336);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(124, 20);
+            this.txtNombre.TabIndex = 5;
+            // 
+            // txtDni
+            // 
+            this.txtDni.Location = new System.Drawing.Point(84, 299);
+            this.txtDni.Name = "txtDni";
+            this.txtDni.Size = new System.Drawing.Size(100, 20);
+            this.txtDni.TabIndex = 4;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(28, 339);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
+            this.lblNombre.TabIndex = 3;
+            this.lblNombre.Text = "Nombre";
+            this.lblNombre.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(28, 379);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(49, 13);
+            this.lblTelefono.TabIndex = 2;
+            this.lblTelefono.Text = "Telefono";
+            this.lblTelefono.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // lblDni
+            // 
+            this.lblDni.AutoSize = true;
+            this.lblDni.Location = new System.Drawing.Point(28, 299);
+            this.lblDni.Name = "lblDni";
+            this.lblDni.Size = new System.Drawing.Size(26, 13);
+            this.lblDni.TabIndex = 1;
+            this.lblDni.Text = "DNI";
             // 
             // lvwLista
             // 
@@ -230,129 +346,12 @@
             this.lvwLista.Location = new System.Drawing.Point(31, 50);
             this.lvwLista.Name = "lvwLista";
             this.lvwLista.Size = new System.Drawing.Size(261, 154);
+            this.lvwLista.SmallImageList = this.imageList1;
             this.lvwLista.TabIndex = 0;
             this.lvwLista.UseCompatibleStateImageBehavior = false;
             this.lvwLista.UseWaitCursor = true;
             this.lvwLista.View = System.Windows.Forms.View.Details;
             this.lvwLista.SelectedIndexChanged += new System.EventHandler(this.lvwLista_SelectedIndexChanged);
-            // 
-            // lblDni
-            // 
-            this.lblDni.AutoSize = true;
-            this.lblDni.Location = new System.Drawing.Point(28, 299);
-            this.lblDni.Name = "lblDni";
-            this.lblDni.Size = new System.Drawing.Size(26, 13);
-            this.lblDni.TabIndex = 1;
-            this.lblDni.Text = "DNI";
-            // 
-            // lblTelefono
-            // 
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(28, 379);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(49, 13);
-            this.lblTelefono.TabIndex = 2;
-            this.lblTelefono.Text = "Telefono";
-            this.lblTelefono.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(28, 339);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(44, 13);
-            this.lblNombre.TabIndex = 3;
-            this.lblNombre.Text = "Nombre";
-            this.lblNombre.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // txtDni
-            // 
-            this.txtDni.Location = new System.Drawing.Point(84, 299);
-            this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(100, 20);
-            this.txtDni.TabIndex = 4;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(84, 336);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(124, 20);
-            this.txtNombre.TabIndex = 5;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(84, 372);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefono.TabIndex = 6;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox1.Location = new System.Drawing.Point(223, 273);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(75, 79);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Icono";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // btnInsertarLista
-            // 
-            this.btnInsertarLista.Location = new System.Drawing.Point(223, 358);
-            this.btnInsertarLista.Name = "btnInsertarLista";
-            this.btnInsertarLista.Size = new System.Drawing.Size(75, 23);
-            this.btnInsertarLista.TabIndex = 8;
-            this.btnInsertarLista.Text = "Insertar";
-            this.btnInsertarLista.UseVisualStyleBackColor = true;
-            this.btnInsertarLista.Click += new System.EventHandler(this.btnInsertarLista_Click);
-            // 
-            // btnBorrarLista
-            // 
-            this.btnBorrarLista.Location = new System.Drawing.Point(28, 427);
-            this.btnBorrarLista.Name = "btnBorrarLista";
-            this.btnBorrarLista.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrarLista.TabIndex = 9;
-            this.btnBorrarLista.Text = "Borrar";
-            this.btnBorrarLista.UseVisualStyleBackColor = true;
-            this.btnBorrarLista.Click += new System.EventHandler(this.btnBorrarLista_Click);
-            // 
-            // btnBorrarTodoLista
-            // 
-            this.btnBorrarTodoLista.Location = new System.Drawing.Point(178, 427);
-            this.btnBorrarTodoLista.Name = "btnBorrarTodoLista";
-            this.btnBorrarTodoLista.Size = new System.Drawing.Size(120, 23);
-            this.btnBorrarTodoLista.TabIndex = 10;
-            this.btnBorrarTodoLista.Text = "Borrar toda la lista";
-            this.btnBorrarTodoLista.UseVisualStyleBackColor = true;
-            this.btnBorrarTodoLista.Click += new System.EventHandler(this.btnBorrarTodoLista_Click);
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.ImageIndex = 0;
-            this.radioButton1.ImageList = this.imageList1;
-            this.radioButton1.Location = new System.Drawing.Point(7, 21);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(50, 18);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.ImageIndex = 1;
-            this.radioButton2.ImageList = this.imageList1;
-            this.radioButton2.Location = new System.Drawing.Point(7, 56);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(50, 20);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // colDni
             // 
@@ -366,13 +365,15 @@
             // 
             this.colTelefono.Text = "Telefono";
             // 
-            // imageList1
+            // btnSalir
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "Whack-Windows-Live-Messenger-icon.png");
-            this.imageList1.Images.SetKeyName(1, "Office-Girl-icon.png");
-            this.imageList1.Images.SetKeyName(2, "windows-7-user-icon.png");
+            this.btnSalir.Location = new System.Drawing.Point(239, 528);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 7;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Form1
             // 
@@ -422,8 +423,8 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDni;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbImagen2;
+        private System.Windows.Forms.RadioButton rbImagen1;
         private System.Windows.Forms.ColumnHeader colDni;
         private System.Windows.Forms.ColumnHeader colNombre;
         private System.Windows.Forms.ColumnHeader colTelefono;
