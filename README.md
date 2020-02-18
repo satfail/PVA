@@ -1,4 +1,5 @@
 # Programación Visual Avanzada 
 ## Ucam
 
-## Practica 1 Formulario
+## Práctica 1 Formulario
+## Práctica  2 y 3
