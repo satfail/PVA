@@ -1,0 +1,25 @@
+3/3/2020 12:44:28 Se añade documento nuevo
+3/3/2020 12:44:29 Se añade documento nuevo
+3/3/2020 12:44:32 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
+3/3/2020 12:44:38 Se guarda archivo con nombre : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
+3/3/2020 12:48:55 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
+3/3/2020 12:50:21 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.txt
+3/3/2020 12:50:35 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
+3/3/2020 12:52:03 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.txt
+3/3/2020 12:52:43 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
+3/3/2020 12:52:48 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.txt
+3/3/2020 13:04:05 Se añade documento nuevo
+3/3/2020 13:05:51 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
+3/3/2020 13:06:12 Se guarda archivo con nombre : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
+3/3/2020 13:06:56 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
+3/3/2020 13:11:32 Se añade documento nuevo
+3/3/2020 13:11:33 Se añade documento nuevo
+3/3/2020 13:15:15 Se añade documento nuevo
+3/3/2020 13:29:09 Se añade documento nuevo
+3/3/2020 13:30:11 Se añade documento nuevo
+3/3/2020 13:30:57 Se añade documento nuevo
+3/3/2020 13:31:48 Se añade documento nuevo
+3/3/2020 13:31:51 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
+3/3/2020 13:31:57 Se abre archivo : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.txt
+3/3/2020 13:32:17 Se guarda archivo con nombre : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.txt
+3/3/2020 13:32:33 Se guarda archivo con nombre : C:\Users\Miguel\source\repos\Práctica4\Práctica4\data\test.rtf
