@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<milista>
+	<titulo>MI AGENDA PERSONAL</titulo>
+	<personas>
+		<persona>
+			<nombre>JUAN</nombre>
+			<apellido1>GARCíA</apellido1>
+			<apellido2>MARTÍNEZ</apellido2>
+			<telefono>656432312</telefono>
+			<email>juangm@yahoo.es</email>
+			<email>jgm@yahoo.es</email>
+		</persona>
+		<persona>
+			<nombre>MARÍA</nombre>
+			<apellido1>LÓPEZ</apellido1>
+			<apellido2>MARTOS</apellido2>
+			<telefono>968553423</telefono>
+			<telefono>670654133</telefono>
+			<email>marialm@yahoo.es</email>
+			<email>mary25@yahoo.es</email>
+		</persona>
+	</personas>
+</milista>

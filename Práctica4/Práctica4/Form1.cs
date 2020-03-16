@@ -208,18 +208,28 @@ namespace Práctica4
         {
             if (sfdGuardar.ShowDialog() == DialogResult.OK)
             {
-                fhijo objetohijo = (fhijo)this.ActiveMdiChild;
-                if (objetohijo != null)
+
+                string ext = Path.GetExtension(ofdAbrir.FileName);
+
+                fhijo objetohijo = new fhijo();
+                objetohijo.MdiParent = this;
+                //Con rich
+                if (ext.Equals(".rtf"))
                 {
-                    //Para text
-                    //StreamWriter documento = File.CreateText(sfdGuardar.FileName);
-                    //documento.WriteLine(objetohijo.rtb1.Text);
-                    //documento.Close();
-                    //---Con rich
                     objetohijo.rtb1.SaveFile(sfdGuardar.FileName);
-                    String texto = "Se guarda archivo con nombre : " + sfdGuardar.FileName;
-                    escrituraLog(texto);
+
                 }
+                else {
+
+                    //Para text
+                    StreamWriter documento = File.CreateText(sfdGuardar.FileName);
+                    documento.WriteLine(objetohijo.rtb1.Text);
+                    documento.Close();
+                }
+
+                objetohijo.rtb1.SaveFile(sfdGuardar.FileName);
+                String texto = "Se guarda archivo con nombre : " + sfdGuardar.FileName;
+                escrituraLog(texto);
             }
         }
 
